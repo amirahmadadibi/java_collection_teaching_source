@@ -1,21 +1,15 @@
 package com.amirahmadadibi.java.teaching;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        Set<String> usernamesSet = new HashSet<>();
+        Stack<String> usernameStack = new Stack<>();
 
-        usernamesSet.add("Amirahmad");
-        usernamesSet.add("Ariana");
-        usernamesSet.add("sina");
-        usernamesSet.add("saman");
+        usernameStack.push("amir");
+        usernameStack.push("ali");
+        usernameStack.push("sina");
 
-        for (String username : usernamesSet) {
-            System.out.println("user is "+username);
-        }
-
-
+        System.out.println(usernameStack.empty());
     }
 }
