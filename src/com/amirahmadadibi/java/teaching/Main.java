@@ -1,20 +1,17 @@
 package com.amirahmadadibi.java.teaching;
 
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> usernames = new ArrayList<>();
+        String[] userArray = new String[1000];
 
-        Flyable flyableBird = new Canry();
-        flyableBird.fly();
-        Canry ca     = new Canry();
-        Sparow sparow = new Sparow();
-        sparow.fly();
+        List<String> userList = new ArrayList<>();
+        userList.add("Amriahmad");
+        userList.add("Ariana");
+
+        System.out.println(userList.get(0));
 
     }
-
 }
