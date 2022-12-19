@@ -1,17 +1,17 @@
 package com.amirahmadadibi.java.teaching;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        String[] userArray = new String[1000];
+        Map<String,Double> userGrades = new HashMap<>();
 
-        List<String> userList = new ArrayList<>();
-        userList.add("Amriahmad");
-        userList.add("Ariana");
+        userGrades.put("AmirahmadAdibi",19.80);
+        userGrades.put("SinaSalvand",17.50);
 
-        System.out.println(userList.get(0));
+        System.out.println(userGrades.get("SinaSalvand"));
 
+        userGrades.remove("SinaSalvand");
     }
 }
