@@ -1,17 +1,21 @@
 package com.amirahmadadibi.java.teaching;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Map<String,Double> userGrades = new HashMap<>();
+        Set<String> usernamesSet = new HashSet<>();
 
-        userGrades.put("AmirahmadAdibi",19.80);
-        userGrades.put("SinaSalvand",17.50);
+        usernamesSet.add("Amirahmad");
+        usernamesSet.add("Ariana");
+        usernamesSet.add("sina");
+        usernamesSet.add("saman");
 
-        System.out.println(userGrades.get("SinaSalvand"));
+        for (String username : usernamesSet) {
+            System.out.println("user is "+username);
+        }
 
-        userGrades.remove("SinaSalvand");
+
     }
 }
